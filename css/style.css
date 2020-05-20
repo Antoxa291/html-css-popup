@@ -90,12 +90,20 @@ a:visited {
     /* Расстояние сверху */
     position: absolute;
 
-    width: 180px;
-    opacity: 0;
-    transform: scaleY(0);
-    transform-origin: 0 0;
-    transition: .5s ease-in-out;
+    /* display: none;
+    background: #b19891; */
 
+    /* width: 180px;
+    visibility: hidden;
+    background: #ADC0CE; */
+
+    /* -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background: #FFAB51; */
 }
 
 .apps_submenu-item {
