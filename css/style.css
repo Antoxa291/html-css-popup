@@ -1,12 +1,26 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     font-family: 'Segoe UI',
         'Roboto',
         arial,
         sans-serif;
+    overflow: scroll;
 }
 
 nav {
     display: flex;
+    align-items: center;
+    height: 50px;
     justify-content: flex-end;
     align-items: center;
     padding: 8px;
@@ -16,11 +30,9 @@ nav {
     /* Фиксированное положение */
     right: 10px;
     /* Расстояние от правого края окна браузера */
-    top: 2%;
+    top: 5px;
     /* Расстояние сверху */
-
-
-
+    position: absolute;
 }
 
 nav a {
@@ -40,7 +52,8 @@ a.onfocus:hover {
 .apps:hover,
 .other:hover {
     background-color: rgb(204, 204, 204);
-    background-size: 30px;
+    /* background-size: 10px; */
+    /* border: 3px solid rgb(204, 204, 204); */
     border-radius: 50% 50% 50% 50%;
 
 }
@@ -56,9 +69,45 @@ a:visited {
     /* Выравнивание по центру */
     margin: auto;
     /* Отступ  */
+
 }
 
+.apps_submenu {
 
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+    /* Поля вокруг текста */
+    background: rgb(146, 255, 155);
+    position: fixed;
+    /* Фиксированное положение */
+    right: 10px;
+    /* Расстояние от правого края окна браузера */
+    top: 55px;
+    /* Расстояние сверху */
+    position: absolute;
+
+    width: 180px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+
+}
+
+.apps_submenu-item {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 20px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+/* 
 nav a img {
     border-radius: 50%;
-}
+} */
