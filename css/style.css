@@ -10,7 +10,17 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding: 8px;
+    /* Поля вокруг текста */
     background: rgb(146, 255, 155);
+    position: fixed;
+    /* Фиксированное положение */
+    right: 10px;
+    /* Расстояние от правого края окна браузера */
+    top: 2%;
+    /* Расстояние сверху */
+
+
+
 }
 
 nav a {
@@ -22,20 +32,33 @@ nav a {
 
 }
 
-a:hover {
+a.onfocus:hover {
     color: rgb(51, 51, 51);
+    text-decoration: underline;
+}
+
+.apps:hover,
+.other:hover {
+    background-color: rgb(204, 204, 204);
+    background-size: 30px;
+    border-radius: 50% 50% 50% 50%;
+
 }
 
 a:visited {
     color: rgb(51, 51, 51);
 }
 
+.apps {
+    display: block;
+    /* Блочный элемент (для старых браузеров) */
+    text-align: center;
+    /* Выравнивание по центру */
+    margin: auto;
+    /* Отступ  */
+}
+
+
 nav a img {
     border-radius: 50%;
 }
-
-.bell {
-    height: 200;
-}
-
-.avatar {}
