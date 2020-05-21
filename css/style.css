@@ -13,7 +13,7 @@ body {
   overflow: scroll;
 }
 
-nav {
+.menu {
   display: flex;
   align-items: center;
   height: 50px;
@@ -31,7 +31,8 @@ nav {
   position: absolute;
 }
 
-nav a {
+nav a,
+nav img {
   color: rgb(51, 51, 51);
   outline: none;
   padding: 8px;
@@ -39,7 +40,7 @@ nav a {
   text-decoration: none;
 }
 
-a.onfocus:hover {
+nav a.onfocus:hover {
   color: rgb(51, 51, 51);
   text-decoration: underline;
 }
@@ -65,45 +66,41 @@ a:visited {
   /* Отступ  */
 }
 
-.apps_submenu {
-  display: flex;
+.submenu {
+  display: none;
   align-items: center;
   height: 50px;
   justify-content: flex-end;
   align-items: center;
-  padding: 8px;
-  /* Поля вокруг текста */
-  background: rgb(146, 255, 155);
-
+  padding-top: 95px;
+  background-color: gainsboro;
   /* Фиксированное положение */
   right: 10px;
   /* Расстояние от правого края окна браузера */
   top: 55px;
   /* Расстояние сверху */
-  position: absolute;
-
-  /* display: none;
-    background: #b19891; */
-
-  /* width: 180px;
-    visibility: hidden;
-    background: #ADC0CE; */
-
-  /* -webkit-transform: scaleY(0);
-    -ms-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0 0;
-    -ms-transform-origin: 0 0;
-    transform-origin: 0 0;
-    background: #FFAB51; */
+  position: relative;
+  background-color: rgb(204, 204, 204);
+  /* background-size: 10px; */
+  /* border: 3px solid rgb(204, 204, 204); */
+  border-radius: 20px 20px 20px 20px;
 }
 
-.apps_submenu-item {
+.submenu-item {
   max-width: 50px;
   max-height: 50px;
   margin: 20px;
   padding-top: 20px;
   text-align: center;
+}
+
+.nav:active .submenu {
+  /* когда нажали на навигацию, появляется сабменю */
+  display: flex;
+}
+/* как сделать что бbI реагировало только на .apps??? */
+.submenu:hover {
+  display: flex;
 }
 
 /* 
