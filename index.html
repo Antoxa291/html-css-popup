@@ -8,14 +8,18 @@
   </head>
 
   <body>
+    <!-- <input type="checkbox" id="menu_open" class="show-submenu" />
+    <input type="checkbox" id="menu_show" class="submenu-item-more" />
+    <input type="checkbox" id="menu_hide" class="submenu-item-more" /> -->
+
     <nav class="nav">
       <div class="menu">
         <div class="onfocus">Почта</div>
         <div class="onfocus">Картинка</div>
 
         <div class="apps">
-          <input type="checkbox" id="menu_open" class="show-submenu" />
-          <label for="menu_open">
+          <input type="checkbox" id="menu_open" />
+          <label for="menu_open" class="show-submenu">
             <img
               src="../img/apps1.png"
               alt="Приложения People"
@@ -62,9 +66,9 @@
                 <img src="/img/files.png" width="50px" alt="" />
                 <span>Файлы</span>
               </div>
-              <input type="checkbox" id="menu_show" class="submenu-item-more" />
-              <label for="menu_show">
-                <div class="submenu-item-button">Показать больше...</div>
+              <input type="checkbox" id="menu_show" />
+              <label for="menu_show" class="submenu-item-btn">
+                <div class="submenu-item-btn">Показать больше...</div>
               </label>
               <div class="submenu-item-more">
                 <div class="submenu-item-icon">
@@ -106,9 +110,9 @@
                   <span>Почта</span>
                 </div>
               </div>
-              <input type="checkbox" id="menu_hide" class="submenu-item-more" />
-              <label for="menu_hide">
-                <div class="submenu-item-more-button">Скрыть</div>
+              <input type="checkbox" id="menu_hide" />
+              <label for="menu_hide" class="submenu-item-more">
+                <div class="submenu-item-btn submenu-item-more-btn">Скрыть</div>
               </label>
             </div>
           </div>
